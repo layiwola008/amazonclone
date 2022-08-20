@@ -1,0 +1,62 @@
+.checkout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  border-color: white;
+  height: max-content;
+  margin-top: 100px;
+}
+.checkout_left {
+  flex: 4;
+  margin-right: 10px;
+}
+.checkoutItems {
+  background-color: white;
+  padding: 20px;
+}
+.checkout_right {
+  flex: 1;
+  margin-left: 10px;
+  background-color: white;
+}
+.checkout_ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+h3 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-left: 10px;
+}
+.checkout_title {
+  margin-right: 10px;
+  padding: 10px;
+  font-weight: 400;
+  border-bottom: 1px solid lightgray;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .checkout {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .checkout {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkout_left {
+    width: 100%;
+  }
+  .checkout_right {
+    margin-top: 20px;    
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+    
+}

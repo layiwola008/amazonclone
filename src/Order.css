@@ -1,0 +1,77 @@
+.order {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    margin: 20px 0;
+    border: 4px solid lightgray;
+    background-color: white;
+    position: relative;
+}
+.order_id{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+.basket{
+    width: 40%;
+    text-align: left;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.order_items {
+    display: flex;
+    flex-direction: column;
+}
+.order_total {
+    font-weight: 500;
+    text-align: right;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+    .order {
+        width: 100%;
+    }
+    .basket{
+        width: 100%;
+    }
+    .order_top > h2 {
+        font-size: 37px;
+    }
+    .order_top > p {
+        font-size: 25px;
+    }
+  }
+  /*Ipad Mini, Ipad, Ipad Air*/
+  @media only screen and (max-width: 898px) {
+ 
+  }
+  /*Samsung Galaxy and others*/
+  @media only screen and (max-width: 466px) {
+    .order {
+        width: 350px;
+        margin-left: -74px;
+    }
+    .order_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .order_id {
+        position: relative;
+        top: -8px;
+        left: 5px;
+        
+    }
+    .order_top > p {
+        font-size: 17px;
+    }
+    .basket{
+        width: 100%;
+    }
+  }
+  

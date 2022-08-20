@@ -1,0 +1,125 @@
+.header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+.header_search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+.header_searchInput {
+  border-radius: 5px;
+  padding: 6px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+.header_searchInput:focus {
+  outline: none;
+}
+.header_searchIcon {
+  background-color: #f3a847;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  right: 6px;
+  font-size: 15px;
+  padding: 4.5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  z-index: 4;
+}
+.header_optionLineOne {
+  font-size: 10px;
+}
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header_optionBasket > .cartIcon {
+  font-size: 40px;
+}
+.header_optionBasket > .header_basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 13px;
+  background-color: #fbbf24;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: -10px;
+  right: 25px;
+}
+.link {
+  text-decoration: none;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .header {
+    width: 100%;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .header {
+    width: 100%;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .header {
+    width: 100%;
+  }
+  .hideOption {
+    display: none;
+  }
+  .header_logo  {
+    width: 90px;
+  }
+  .header_searchInput {
+    display: none;
+  }
+  .header_searchIcon {
+    display: none;
+  }
+}

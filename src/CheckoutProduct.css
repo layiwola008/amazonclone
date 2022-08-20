@@ -1,0 +1,63 @@
+.checkoutProduct {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkoutProduct_info {
+    padding-left: 20px;
+}
+
+.checkoutProduct > button {
+    background: #f0c14b;
+    width: 180px;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    align-self: center;
+    box-shadow: 0 0 20px #eee;
+}
+.checkoutProduct_image {
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+.checkoutProduct_rating {
+    display: flex;
+    position: relative;
+    top: -15px;
+}
+.checkoutProduct_title {
+    font-size: 17px;
+    font-weight: 500;
+}
+.checkoutProduct_desc {
+    max-width: 65ch;
+    font-size: 13px;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+    .checkoutProduct > button {
+        width: 45%;
+    }
+  }
+  /*Ipad Mini, Ipad, Ipad Air*/
+  @media only screen and (max-width: 898px) {
+   
+  }
+  /*Samsung Galaxy and others*/
+  @media only screen and (max-width: 466px) {
+    .checkoutProduct {
+        display: flex;
+        flex-direction: column;
+    }
+    .checkoutProduct > button {
+        width: 100%;
+    }
+  }

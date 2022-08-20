@@ -1,0 +1,49 @@
+.categories {
+  position: relative;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: 40px;
+  background-color: #232f3e;
+  color: white;
+}
+.categoriesItems {
+  margin: 0 20px;
+  display: flex;
+  padding-top: 5px;
+}
+
+.categoriesItems > .catItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+}
+
+.categoriesItems > .catItems > li {
+  list-style-type: none;
+  margin: 0 15px 0 0;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .categoriesItems > .catItems > li {
+    font-size: 18px;
+  }
+}
+/*Ipad Mini, Ipad, Ipad Air*/
+@media only screen and (max-width: 898px) {
+  .categoriesItems > .catItems > li {
+    font-size: 15px;
+  }
+}
+/*Samsung Galaxy and others*/
+@media only screen and (max-width: 466px) {
+  .categoriesItems > .catItems > li {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .hideonMobile {
+    display: none;
+  }
+}

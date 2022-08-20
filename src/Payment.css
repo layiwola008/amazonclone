@@ -1,0 +1,70 @@
+.payment {
+    background-color: white;
+    margin-top: 100px;
+}
+.payment_container > h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(234, 237, 237);
+    border-bottom: 1px solid lightgray;
+}
+.payment_container > h1 a {
+    text-decoration: none;
+}
+.payment_section {
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+}
+.payment_title {
+    flex: 0.2;
+}
+.payment_section > .payment_title > h3 {
+    font-weight: bold;
+}
+.payment_address, .payment_items, .payment_details {
+    flex: 0.8;
+}
+.payment_details > form {
+    max-width: 400px;
+}
+.payment_details > h3 {
+    padding-bottom: 20px;
+}
+.payment_details > form > div > button {
+    background: #f0c14b;
+    width: 180px;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    align-self: center;
+    box-shadow: 0 0 20px #eee;
+}
+
+
+ /*Ipad Mini, Ipad, Ipad Air*/
+ @media only screen and (max-width: 898px) {
+    .payment_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .payment_section > .payment_title > h3 {
+        position: relative;
+        left: -10px
+    }
+ }
+
+     /*Samsung Galaxy and others*/
+  @media only screen and (max-width: 466px) {
+    .payment_container > h1 {
+        font-size: 30px;
+    }
+  }
